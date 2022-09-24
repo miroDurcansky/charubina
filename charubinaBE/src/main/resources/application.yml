@@ -1,0 +1,6 @@
+spring:
+  data:
+    mongodb:
+      database: Charubina
+      host: javatechmongodb
+      port: 27017
