@@ -1,0 +1,14 @@
+version: "3"
+services:
+  javatechmongodb:
+    image: mongo:latest
+    container_name: javatechmongodb
+    ports:
+      - 27017:27017
+  charubina-mongodb:
+    image: charubina-mongodb:1.0
+    container_name: charubina-mongodb
+    ports:
+      - 8080:8080
+    links:
+      - javatechmongodb
